@@ -4,9 +4,9 @@ import getbest
 
 class test_getColumns(unittest.TestCase):
       def test_getCols(self): # tests given data in the csv
-        f = open("bestdat0.csv", "r")
+        f = open("bestdat0.csv", "r") #opens file in the directory#
         num_col, mark_col = getbest.getCols(f)
-        f.close()
+        f.close()# good coding practice to close files to avoid system resources getting wasted like memory
         self.assertEqual(num_col, 1)
         self.assertEqual(mark_col, 2)
 
