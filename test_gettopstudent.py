@@ -11,7 +11,7 @@ class test_getTopStudent(unittest.TestCase):
         self.assertEqual(best_idx, 2)
         self.assertEqual(best, 90) # change lecture edit from 900 to 90#
 
-
+#removed extra test that was the same as the above test#
 
 
 if __name__ == '__main__':
