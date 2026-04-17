@@ -2,15 +2,15 @@ import unittest
 import getbest
 
 class test_getTopStudent(unittest.TestCase):
-  def test_findTop(self):#tests given data in the csv
+  def test_findTop(self):#tests given data in the csv#
         data =  open("bestdat0.csv", "r")
-        num_c0l, mark_col = getbest.getCols(data) #corrected the spelling of col from c0l
+        num_col, mark_col = getbest.getCols(data) #corrected the spelling of col from c0l#
         best_idx, best = getbest.findTop(data, num_col, mark_col) #removed extra underscore after best#
         data.close()
         self.assertEqual(best_idx, 2)
         self.assertEqual(best, 90)
        
-  def test_findTop(self):#tests given data in the csv
+  def test_findTopStudent(self):#tests given data in the csv#
         data =  open("bestdat0.csv", "r")
         num_col, mark_col = getbest.getCols(data)
         best_idx, best = getbest.findTop(data, num_col, mark_col)
@@ -22,4 +22,4 @@ class test_getTopStudent(unittest.TestCase):
 
 
 if __name__ == '__main__':
-  unittest.dev()
+  unittest.main()
